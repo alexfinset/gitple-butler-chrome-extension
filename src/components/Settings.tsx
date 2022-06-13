@@ -255,7 +255,7 @@ export default function Settings(props: Props) {
               id="gitple-butler-config"
               type="file"
             />
-            <Button size="small" variant="contained">
+            <Button size="small" variant="contained" component="span">
               Import Settings
             </Button>
           </label>
