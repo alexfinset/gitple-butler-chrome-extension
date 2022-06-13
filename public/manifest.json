@@ -1,0 +1,24 @@
+{
+  "name": "Gitple Planning Butler",
+  "description": "Make Friday planning meetings easy",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Launch App"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["./static/js/content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "gitple-logo.png",
+    "48": "gitple-logo.png",
+    "128": "gitple-logo.png"
+  }
+}
